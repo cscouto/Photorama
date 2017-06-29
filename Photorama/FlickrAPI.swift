@@ -52,6 +52,8 @@ struct FlickrAPI {
         }
         components.queryItems = queryItems
         
+        print(components.url!)
+        
         return components.url!
     }
     
@@ -64,6 +66,7 @@ struct FlickrAPI {
         do {
             let jsonObject = try JSONSerialization.jsonObject(with: data,
                                                               options: [])
+            print(jsonObject)
             guard
                 let jsonDictionary = jsonObject as? [AnyHashable:Any],
                 let photos = jsonDictionary["photos"] as? [String:Any],
@@ -85,6 +88,7 @@ struct FlickrAPI {
                 // Maybe the JSON format for photos has changed
                 return .failure(FlickrError.invalidJSONData)
             }
+            print(finalPhotos)
             return .success(finalPhotos)
         } catch let error {
             return .failure(error)
