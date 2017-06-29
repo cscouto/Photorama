@@ -21,6 +21,7 @@
 		F77A19B11F053B0300136319 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A19B01F053B0300136319 /* PhotoCollectionViewCell.swift */; };
 		F77A19B31F0546C100136319 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A19B21F0546C100136319 /* ImageStore.swift */; };
 		F77A19B51F05473F00136319 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A19B41F05473F00136319 /* PhotoInfoViewController.swift */; };
+		F77A19B81F054B1700136319 /* Photorama.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F77A19B61F054B1700136319 /* Photorama.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		F77A19B01F053B0300136319 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		F77A19B21F0546C100136319 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		F77A19B41F05473F00136319 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
+		F77A19B71F054B1700136319 /* Photorama.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Photorama.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				F71441331F042C7100040AAD /* PhotosViewController.swift */,
+				F77A19B61F054B1700136319 /* Photorama.xcdatamodeld */,
 				F71441391F043CA800040AAD /* Photo.swift */,
 				F71441051F042ACF00040AAD /* AppDelegate.swift */,
 				F71441091F042ACF00040AAD /* Main.storyboard */,
@@ -286,6 +289,7 @@
 				F71441381F04397700040AAD /* PhotoStore.swift in Sources */,
 				F77A19B31F0546C100136319 /* ImageStore.swift in Sources */,
 				F77A19AF1F05383D00136319 /* PhotoDataSource.swift in Sources */,
+				F77A19B81F054B1700136319 /* Photorama.xcdatamodeld in Sources */,
 				F77A19B11F053B0300136319 /* PhotoCollectionViewCell.swift in Sources */,
 				F71441341F042C7100040AAD /* PhotosViewController.swift in Sources */,
 				F714413A1F043CA800040AAD /* Photo.swift in Sources */,
@@ -559,6 +563,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F77A19B61F054B1700136319 /* Photorama.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F77A19B71F054B1700136319 /* Photorama.xcdatamodel */,
+			);
+			currentVersion = F77A19B71F054B1700136319 /* Photorama.xcdatamodel */;
+			path = Photorama.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F71440FA1F042ACF00040AAD /* Project object */;
 }
