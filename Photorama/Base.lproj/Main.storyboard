@@ -31,7 +31,7 @@
                                     <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UICollectionViewCell" id="sB7-kY-PVh" customClass="PhotoCollectionViewCell" customModule="Photorama" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="sB7-kY-PVh" customClass="PhotoCollectionViewCell" customModule="Photorama" customModuleProvider="target">
                                         <rect key="frame" x="2" y="2" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -104,7 +104,7 @@
                                 <items>
                                     <barButtonItem title="Tags" id="B6V-v5-KIB">
                                         <connections>
-                                            <segue destination="SWE-JK-sTc" kind="presentation" id="7MQ-PH-1fS"/>
+                                            <segue destination="SWE-JK-sTc" kind="presentation" identifier="showTags" id="7MQ-PH-1fS"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -153,8 +153,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Tags" id="3Y6-fg-hkA">
-                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="jaH-Ex-Hzv"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xLA-d3-Bus"/>
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="jaH-Ex-Hzv">
+                            <connections>
+                                <action selector="done:" destination="fdi-HL-8FH" id="REa-rA-0yd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xLA-d3-Bus">
+                            <connections>
+                                <action selector="addNewTag:" destination="fdi-HL-8FH" id="G3O-W6-CNr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7AX-Gy-bl1" userLabel="First Responder" sceneMemberID="firstResponder"/>
